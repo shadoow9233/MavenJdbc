@@ -14,6 +14,9 @@ public class App {
         ApplicationContext context = new ClassPathXmlApplicationContext("com/spring/jdbc/config.xml");
         StudentDao studentDao = context.getBean("studentDao", StudentDao.class);
         
+        //insert query 
+        
+        
 //        Student student = new Student();
 //        student.setId(556);
 //        student.setName("sani");
@@ -22,13 +25,23 @@ public class App {
 //        System.out.println("Student added: " + result);
         
         
+        //update query
         
-        Student student = new Student();
-        student.setId(25);
-        student.setName("Black Shadoow");
-        student.setCity("Krishna Tower");
-        int result = studentDao.change(student);
-        System.out.println("Data updated: " + result);
+//        Student student = new Student();
+//        student.setId(25);
+//        student.setName("Black Shadoow");
+//        student.setCity("Krishna Tower");
+//        int result = studentDao.change(student);
+//        System.out.println("Data updated: " + result);
+        
+        
+        //delete record
+        int result = studentDao.delete(556);
+        System.out.println("Deleted "+result);
+     
+        
+       
+        
         
     }
 }
