@@ -1,5 +1,7 @@
 package com.spring.jdbc.dao;
 
+import java.util.List;
+
 import com.spring.jdbc.entities.Student;
 
 public interface StudentDao {
@@ -8,6 +10,7 @@ public interface StudentDao {
 	public int delete(int studentId );
 	
 	public Student getStudent(int StudentId);
+	public List<Student> getAllStudents();
 	
 	
 	
