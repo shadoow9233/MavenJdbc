@@ -36,8 +36,12 @@ public class App {
         
         
         //delete record
-        int result = studentDao.delete(556);
-        System.out.println("Deleted "+result);
+//        int result = studentDao.delete(556);
+//        System.out.println("Deleted "+result);
+        
+        Student student=studentDao.getStudent(111);
+        System.out.println(student);
+        
      
         
        
