@@ -20,12 +20,12 @@ public class App {
         //insert query 
         
         
-        Student student = new Student();
-        student.setId(101);
-        student.setName("Kalu");
-        student.setCity("Achham");   
-        int result = studentDao.insert(student);
-        System.out.println("Student added: " + result);
+//        Student student = new Student();
+//        student.setId(103);
+//        student.setName("Black");
+//        student.setCity("Achham");   
+//        int result = studentDao.insert(student);
+//        System.out.println("Student added: " + result);
         
         //update query
         
